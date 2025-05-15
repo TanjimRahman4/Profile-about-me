@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Md. Tanjim Rahman - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            color: #00ffe1;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #00ffe1;
+            object-fit: cover;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 225, 0.5);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1100px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .card h2 {
+            color: #00ffe1;
+            margin-bottom: 10px;
+        }
+
+        .card p,
+        .card ul {
+            color: #e0e0e0;
+            font-size: 1rem;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #00ffe1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #00ffe1;
+            color: #000;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #00bfa6;
+        }
+
+        footer {
+            margin: 40px 0 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+        <h1>Md. Tanjim Rahman</h1>
+        <p>Young Developer | Video Editor | Gamer | Artist | YouTuber</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>🧑🏽 About Me</h2>
+            <p>I’m a 12-year-old passionate about coding, editing videos, gaming, and drawing. I love creating things
+                and competing in challenges like Code Clash and HPE Code wars.</p>
+        </div>
+
+        <div class="card">
+            <h2>💻 Skills</h2>
+            <ul>
+                <li>Web Development: HTML, CSS, Java</li>
+                <li>Scratch</li>
+                <li>CapCut for Video Editing</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🏆 Competitions</h2>
+            <p>✔ Participated in coding events like <strong>Code Clash</strong> and <strong>HPE Code wars</strong>.</p>
+            <p>and became <strong>129</strong> position in code wars in 500,000 peoples</p>
+        </div>
+
+        <div class="card">
+            <h2>🎯 My Goal</h2>
+            <p>To reach <strong>10,000 subscribers</strong> on my YouTube channel.</p>
+            <p>📺 YouTube: <a href="https://www.youtube.com/@Rono_Footballeditz" target="_blank">@Rono_Footballeditz</a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📬 Contact Me</h2>
+            <p>Email: <a href="mailto:example@email.com">mdtanjim2013@email.com</a></p>
+            <a href="Certificate.png" class="btn" download>📄 Download Certificate</a>
+        </div>
+        <div class="card">
+            <h2>🕹️ Hobbies</h2>
+            <ul>
+                <li>Playing video games</li>
+                <li>Drawing and sketching</li>
+                <li>Editing football videos</li>
+                <li>Watching football matches</li>
+            </ul>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h2>🏆 Achievements</h2>
+                    <div class="row" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                        <img src="Certificate1.png" id="cer1" alt="Certificate 1">
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2>🏆 Achievements</h2>
+            <div class="row" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <img src="Certificate2.png" id="cer2" alt="Certificate 2">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2>🏆 Achievements</h2>
+            <div class="row" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                <img src="Certificate3.png" id="cer3" alt="Certificate 3">
+            </div>
+        </div>
+    </div>
+    </div>
+            
+      
+
+    <footer>
+        © 2025 Md. Tanjim Rahman. All rights reserved.<br>
+        <a href="https://x.com/Rono_football" target="_blank" class="mx-3">
+            <img src="X-icon.png" alt="X"
+                style="width: 40px; height: 40px; border-radius: 90%; transition: transform 0.3s ease-in-out;"
+                onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="https://www.youtube.com/@Rono_footballeditz" target="_blank" class="mx-3">
+            <img src="youtube-icon.png" alt="YouTube"
+                style="width: 40px; height: 40px; border-radius: 90%; transition: transform 0.3s ease-in-out;"
+                onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+    </footer>
+
+</body>
+
+</html>
